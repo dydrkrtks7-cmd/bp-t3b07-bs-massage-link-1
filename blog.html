@@ -1,344 +1,511 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>발산 마사지 링크 블로그 – 진짜 힐링 이야기</title>
-    <meta name="description" content="발산 마사지 링크 블로그에 오신 걸 환영합니다. 마사지 꿀팁, 스트레스 해소법, 그리고 링크의 숨은 이야기를 편하게 나눠요.">
-    <meta name="keywords" content="발산 마사지, 발산 마사지 링크, 마사지 블로그, 힐링, 스웨디시, 타이마사지, 마사지 후기">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <link rel="canonical" href="https://gangnam-shirt-review.mapo-room-guide.xyz/blog.html">
-    <!-- OG Meta -->
-    <meta property="og:title" content="발산 마사지 링크 블로그 – 마사지 덕후의 수다">
-    <meta property="og:description" content="발산 마사지 링크 블로그에서 진짜 힐링 팁을 만나보세요. 전문 마사지사가 알려주는 관리법, 일상 속 작은 행복 찾기.">
-    <meta property="og:image" content="https://t3b07-bs-massage-link-1.vercel.app/og-image.jpg">
-    <meta property="og:url" content="https://gangnam-shirt-review.mapo-room-guide.xyz/blog.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="발산 마사지 링크">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="발산 마사지 링크 블로그 – 마사지 덕후의 수다">
-    <meta name="twitter:description" content="발산 마사지 링크 블로그에서 진짜 힐링 팁을 만나보세요.">
-    <meta name="twitter:image" content="https://t3b07-bs-massage-link-1.vercel.app/og-image.jpg">
-    <style>
-        /* Reset & Base */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #0a0a0a;
-            color: #e5e5e5;
-            line-height: 1.65;
-            font-size: 1.05rem;
-            font-weight: 400;
-        }
-        /* Typography */
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            line-height: 1.2;
-            color: #f5f5f0;
-        }
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.75rem;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 0.6rem;
-            margin-top: 2.5rem;
-        }
-        h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.4rem;
-            margin-top: 1.8rem;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            color: #d4d4d4;
-        }
-        a {
-            color: #d4af37;
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-        a:hover {
-            color: #f5e6a3;
-        }
-        /* Drop Cap */
-        .drop-cap::first-letter {
-            float: left;
-            font-size: 3.5rem;
-            line-height: 0.85;
-            font-weight: 700;
-            margin-right: 0.5rem;
-            color: #d4af37;
-            font-family: 'Georgia', serif;
-        }
-        /* Layout Container */
-        .container {
-            max-width: 780px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        /* Header & Navigation */
-        .site-header {
-            background-color: #111;
-            border-bottom: 1px solid #2a2a2a;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-        }
-        .site-header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .site-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #f5f5f0;
-            letter-spacing: -0.02em;
-        }
-        .site-title a {
-            color: #f5f5f0;
-        }
-        .site-title a:hover {
-            color: #d4af37;
-        }
-        .nav-present {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-        .nav-present a {
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: #b0b0b0;
-            transition: color 0.2s;
-        }
-        .nav-present a:hover {
-            color: #d4af37;
-        }
-        .tel-link {
-            background-color: #d4af37;
-            color: #0a0a0a !important;
-            padding: 0.4rem 1rem;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background-color 0.2s, transform 0.2s;
-        }
-        .tel-link:hover {
-            background-color: #f5e6a3;
-            transform: scale(1.02);
-            color: #0a0a0a !important;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            background: none;
-            border: none;
-            padding: 4px;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background-color: #e5e5e5;
-            border-radius: 2px;
-            transition: 0.3s;
-        }
-        @media (max-width: 768px) {
-            .nav-present {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: #111;
-                padding: 1.5rem 2rem;
-                border-bottom: 1px solid #2a2a2a;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-night-signal">
+  <meta name="description" content="발산 마사지 링크 — 처음 방문하는 당신을 위한 조건별 선택 안내. 문의 전 알아야 할 것, 물어봐도 되는 질문, 초행자가 자주 겪는 오해를 짧고 정확하게 정리했습니다.">
+  <meta name="keywords" content="발산 마사지 링크, 발산 마사지, 발산역 마사지, 발산 마사지 초행, 발산 마사지 안내">
+  <link rel="canonical" href="https://gangnam-shirt-review.mapo-room-guide.xyz/blog.html">
+  <title>발산 마사지 링크 — 처음 방문자를 위한 조건별 선택 안내</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="발산 마사지 링크 — 처음 방문자를 위한 조건별 선택 안내">
+  <meta property="og:description" content="초행자라면 누구나 막히는 그 지점. 문의 전 알아둘 것, 물어봐도 될 질문의 범위, 자주 생기는 오해까지. 발산에서 마사지를 처음 찾는 당신을 위한 안내.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gangnam-shirt-review.mapo-room-guide.xyz/blog.html">
+  <meta property="og:locale" content="ko_KR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="발산 마사지 링크 — 처음 방문자를 위한 초행 안내">
+  <meta name="twitter:description" content="발산에서 마사지를 처음 찾는 사람이 반드시 알아야 할 조건과 기준. 문의 전 읽어보세요.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "발산 마사지 링크 — 처음 방문자를 위한 조건별 선택 안내",
+      "url": "https://gangnam-shirt-review.mapo-room-guide.xyz/",
+      "description": "발산 지역 마사지 초행자를 위한 정보 페이지. 문의 전 확인사항, 질문 범위, 오해를 다룹니다.",
+      "author": {
+        "@type": "Person",
+        "name": "김도준"
+      },
+      "about": {
+        "@type": "LocalBusiness",
+        "name": "발산 마사지 링크",
+        "areaServed": "발산",
+        "serviceType": "마사지"
+      },
+      "mainEntity": [
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "처음 방문 시 반드시 물어봐야 할 질문은?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "코스 시간과 압 강도, 그리고 현재 가능한 시간대를 먼저 확인하세요. 초행자는 대개 긴장된 상태라 이 두 가지만 명확하면 절반은 해결됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "발산 마사지 중 초행자가 자주 오해하는 점은?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "가격에 모든 것이 포함돼 있다고 착각하는 경우가 많습니다. 시설 이용 시간, 부가 서비스 범위는 문의 단계에서 먼저 물어보는 것이 오해를 줄입니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "예약 없이 당일 방문해도 될까?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "예약을 권하지만, 당일 방문도 가능한 경우가 있습니다. 단, 피크 시간대는 대기 시간이 발생할 수 있으니 전화 없이 가기보다는 최소한의 여부를 확인하는 것이 빠릅니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "내게 맞는 코스를 어떻게 빠르게 고를 수 있을까?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "통증 부위와 원하는 압 강도, 그리고 이용 가능한 시간을 먼저 결정하세요. 나머지는 현장에서 조율하면 됩니다. 너무 많은 선택지를 고민할 필요 없습니다."
+              }
             }
-            .nav-present.active {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            .site-header .container {
-                position: relative;
-            }
-            h1 {
-                font-size: 2.2rem;
-            }
-            h2 {
-                font-size: 1.6rem;
-            }
+          ]
         }
-        /* Blog Post Specific */
-        .blog-post {
-            padding: 3rem 0 4rem;
-        }
-        .blog-meta {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        .blog-meta span {
-            background: #1a1a1a;
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            border: 1px solid #2a2a2a;
-        }
-        .blog-content {
-            padding-top: 0.5rem;
-        }
-        .blog-content blockquote {
-            border-left: 3px solid #d4af37;
-            padding-left: 1.2rem;
-            margin: 1.5rem 0;
-            color: #c0c0b8;
-            font-style: italic;
-        }
-        .blog-content ul, .blog-content ol {
-            margin: 1rem 0 1.5rem 1.8rem;
-            color: #d4d4d4;
-        }
-        .blog-content li {
-            margin-bottom: 0.5rem;
-        }
-        .blog-content img {
-            max-width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid #2a2a2a;
-        }
-        .blog-content .highlight-box {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-        .blog-content .highlight-box h4 {
-            margin-top: 0;
-            color: #d4af37;
-        }
-        .cta-end {
-            background: #1a1a1a;
-            border: 1px solid #d4af37;
-            border-radius: 16px;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 3rem;
-        }
-        .cta-end p {
-            margin-bottom: 1rem;
-        }
-        .cta-end a {
-            display: inline-block;
-            background: #d4af37;
-            color: #0a0a0a;
-            padding: 0.7rem 2rem;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        .cta-end a:hover {
-            background: #f5e6a3;
-        }
-        footer {
-            border-top: 1px solid #2a2a2a;
-            padding: 2rem 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.85rem;
-        }
-        footer a {
-            color: #888;
-        }
-        footer a:hover {
-            color: #d4af37;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+      ]
+    }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #08080f;
+      color: #f0f0f5;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+      overflow-x: hidden;
+    }
+    /* Grid background pattern */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: 
+        repeating-linear-gradient(0deg, rgba(240,240,245,0.03) 0px, rgba(240,240,245,0.03) 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, rgba(240,240,245,0.03) 0px, rgba(240,240,245,0.03) 1px, transparent 1px, transparent 40px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    h1, h2, h3, h4, .r-nav-q75u {
+      font-family: 'Barlow Condensed', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+      color: #f0f0f5;
+    }
+    h1 {
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.02em;
+      border-bottom: 2px solid #ff5c1a;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      line-height: 1.2;
+    }
+    h3 {
+      font-size: 1.6rem;
+      letter-spacing: 0.03em;
+      color: #00c8a0;
+      margin-bottom: 0.5rem;
+    }
+    p, li {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #d0d0d8;
+      max-width: 68ch;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    /* Navigation dot */
+    .t-img-v656 {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .v-top-3yo8 {
+      width: 10px;
+      height: 10px;
+      background: #f0f0f5;
+      border-radius: 50%;
+      opacity: 0.25;
+      transition: opacity 0.2s;
+    }
+    .v-top-3yo8.active {
+      opacity: 1;
+      background: #ff5c1a;
+    }
+    /* Layout */
+    .v-head-ax13-8x3f2k {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 48px;
+      position: relative;
+      z-index: 2;
+    }
+    section {
+      padding: 80px 0;
+      position: relative;
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      section {
+        padding: 40px 0;
+      }
+      .v-head-ax13-8x3f2k {
+        padding: 0 24px;
+      }
+      p, li {
+        max-width: 100%;
+      }
+    }
+    /* Route badge */
+    .n-card-awdl {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 1.5rem;
+    }
+    .n-card-awdl-square {
+      width: 14px;
+      height: 14px;
+      background: #ff5c1a;
+    }
+    .n-card-awdl-text {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      color: #ff5c1a;
+    }
+    /* Metro timeline */
+    .k-side-kc7b {
+      position: relative;
+      padding-left: 28px;
+      margin: 32px 0;
+    }
+    .k-side-kc7b::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #ff5c1a;
+    }
+    .k-side-kc7b-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .k-side-kc7b-item::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background: #08080f;
+      border: 2px solid #ff5c1a;
+      border-radius: 50%;
+    }
+    /* 4-column grid */
+    .n-nav-8kb7-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin: 40px 0;
+    }
+    @media (max-width: 768px) {
+      .n-nav-8kb7-4 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .x-body-spy9 {
+      border-top: 2px solid #ff5c1a;
+      padding-top: 12px;
+    }
+    /* Asymmetric split */
+    .n-foot-5920 {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin: 48px 0;
+    }
+    @media (max-width: 768px) {
+      .n-foot-5920 {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* Cards with rotation */
+    .x-box-16o7-tilt {
+      background: rgba(240,240,245,0.02);
+      border: 1px solid rgba(240,240,245,0.08);
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+      transform: rotate(0.6deg);
+      margin-bottom: 20px;
+    }
+    .x-box-16o7-tilt:nth-child(odd) {
+      transform: rotate(-0.4deg);
+    }
+    blockquote {
+      background: rgba(255,92,26,0.12);
+      padding: 16px 24px;
+      border-left: 4px solid #ff5c1a;
+      font-style: normal;
+      font-weight: 400;
+      margin: 24px 0;
+    }
+    /* Footer */
+    footer {
+      padding: 48px 0;
+      border-top: 1px solid rgba(240,240,245,0.08);
+      text-align: center;
+      color: #a0a0aa;
+      position: relative;
+      z-index: 2;
+    }
+    /* Hidden DOM noise */
+    .n-list-h5be {
+      display: none;
+    }
+    /* Responsive hamburger */
+    .n-ico-c2ci {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+    @media (max-width: 768px) {
+      .n-ico-c2ci {
+        display: flex;
+      }
+    }
+    .v-nav-kqrb {
+      width: 25px;
+      height: 2px;
+      background: #f0f0f5;
+    }
+  </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="site-title"><a href="/">발산 마사지 링크</a></div>
-            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.classList.toggle('active'); document.querySelector('.nav-present').classList.toggle('active');">
-                <span></span><span></span><span></span>
-            </button>
-            <nav class="nav-present">
-                <a href="/">홈</a>
-                <a href="/about">소개</a>
-                <a href="/services">서비스</a>
-                <a href="/blog">블로그</a>
-                <a href="/contact">문의</a>
-                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
-            </nav>
+  <header>
+    <div class="v-head-ax13-8x3f2k" style="padding-top: 20px; padding-bottom: 20px;">
+      <div class="n-card-awdl">
+        <span class="n-card-awdl-square"></span>
+        <span class="n-card-awdl-text">발산 마사지 링크 · ROUTE 01</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating dot navigation -->
+  <nav class="t-img-v656">
+    <a href="#hero" class="v-top-3yo8 active" aria-label="히어로"></a>
+    <a href="#check" class="v-top-3yo8" aria-label="체크사항"></a>
+    <a href="#misunderstand" class="v-top-3yo8" aria-label="오해"></a>
+    <a href="#faq" class="v-top-3yo8" aria-label="FAQ"></a>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="v-head-ax13-8x3f2k">
+        <div class="n-foot-5920">
+          <div>
+            <h1>발산 마사지<br>링크</h1>
+            <div style="height: 4px; width: 60px; background: #ff5c1a; margin: 24px 0;"></div>
+            <p style="font-size: 1.25rem; color: #f0f0f5;">처음이라 막히는 부분만 정확하게. 문의 전에 읽는 초행 안내.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: flex-end;">
+            <p style="color: #00c8a0; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em;">TRANSIT LINE 09 · NIGHT SERVICE</p>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main class="blog-post">
-        <div class="container">
-            <article>
-                <h1>발산에서 마사지 처음 받아본 썰 푼다 (진짜 꿀팁 있음)</h1>
-                <div class="blog-meta">
-                    <span>📅 2025. 3. 12.</span>
-                    <span>✍️ 링크 마사지 덕후</span>
-                    <span>🏷️ 마사지 꿀팁</span>
-                </div>
+    <!-- 체크 섹션 -->
+    <section id="check">
+      <div class="random-wrapper-4457xp">
+        <div class="v-head-ax13-8x3f2k">
+          <h2>문의 전 알아두면 좋은 것</h2>
+          <div class="n-nav-8kb7-4">
+            <div class="x-body-spy9">
+              <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">01 시간대</h4>
+              <p>평일 낮인지 저녁인지에 따라 대기 시간이 달라집니다. 목적 시간을 먼저 정하세요.</p>
+            </div>
+            <div class="x-body-spy9">
+              <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">02 압 강도</h4>
+              <p>약하게, 보통, 강하게 중 하나로만 말해도 절반은 통합니다. 전문 용어는 필요 없습니다.</p>
+            </div>
+            <div class="x-body-spy9">
+              <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">03 코스 길이</h4>
+              <p>30분인지 60분인지. 그 이상은 초행자에게 부담일 수 있습니다.</p>
+            </div>
+            <div class="x-body-spy9">
+              <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">04 인원 수</h4>
+              <p>혼자면 예약 없이도 수월합니다. 둘 이상이면 미리 말해야 합니다.</p>
+            </div>
+          </div>
+          <p style="margin-top: 24px;">위 네 가지를 알고 문의하면 대화가 세 줄 안에 끝납니다. 급한 결정에도 이 네 가지는 반드시 머릿속에 두세요.</p>
+        </div>
+      </div>
+    </section>
 
-                <div class="blog-content drop-cap">
-                    <p>야, 나 원래 마사지 같은 거 별로 안 믿었거든. '에이, 그냥 기름 바르고 주물럭거리는 거 아냐?' 이 생각 진짜 10년 넘게 했어. 근데 있잖아, 내가 완전 틀렸어. 완전히, 아주, 쥐뿔도 몰랐던 거야.</p>
+    <!-- 물어봐도 되는 질문의 범위 / 오해 -->
+    <section id="misunderstand">
+      <div class="v-head-ax13-8x3f2k">
+        <div class="n-foot-5920">
+          <div>
+            <h2>물어봐도 되는 질문의 범위</h2>
+            <p>처음이라 뭐를 물어야 할지 모르는 것도 문제입니다. 사실 거의 모든 것을 물어보세요. 가격 구성, 시간당 추가 요금, 샤워 가능 여부, 수건 제공, 주차 유무 등. 이 질문들은 당연한 소비자 권리이며 불편해할 이유가 전혀 없습니다.</p>
+            <blockquote>"초행자에게 필요한 건 정보가 아니라 질문할 용기다."</blockquote>
+            <p>막연히 '분위기 좋은 곳'을 찾으면 실패합니다. 반드시 구체적인 조건으로 질문을 재구성해야 합니다.</p>
+          </div>
+          <div class="x-box-16o7-tilt">
+            <h3 style="color: #ff5c1a; margin-top: 0;">처음이라 생기는 오해</h3>
+            <ul style="list-style: none; padding-left: 0; color: #d0d0d8;">
+              <li style="margin-bottom: 12px;">➊ 가격에 모든 게 포함된다고 생각하지 마세요. 시간과 추가 코스는 별도 문의가 필요할 수 있습니다.</li>
+              <li style="margin-bottom: 12px;">➋ '마사지'라는 단어 하나에 기대가 너무 크면, 실제 강도나 방식에서 차이를 느끼고 실망합니다.</li>
+              <li style="margin-bottom: 12px;">➌ 조용히 해야 한다는 강박 — 불편하면 말하는 게 맞습니다. 압 강도 조절은 기본 요청입니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <p>지난주에 회사에서 프로젝트 막 끝나고 어깨가 돌덩이처럼 굳었어. 거의 3주를 밤샘하면서 했더니 목도 안 돌아가고 두통까지 생기더라고. 그래서 '아, 이건 좀 풀어야겠다' 싶어서 찾아본 게 <strong>발산 마사지 링크</strong>였어. 사실 검색하다가 평이 좋길래 '한번 가보자' 하고 바로 전화했지. (전화번호는 010-6279-0862, 참고로 알려줌)</p>
+    <!-- Timeline section -->
+    <section>
+      <div class="v-head-ax13-8x3f2k">
+        <h2>빠른 결정을 위한 순서</h2>
+        <div class="k-side-kc7b">
+          <div class="k-side-kc7b-item">
+            <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">01 위치 확정</h4>
+            <p>발산역에서 도보 몇 분인지 확인. 지도에서 직선 거리보다 실제 동선이 더 중요합니다.</p>
+          </div>
+          <div class="k-side-kc7b-item">
+            <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">02 가능한 시간대 확인</h4>
+            <p>문의할 때 '지금부터 가능한가요'라고 특정 시간을 말하는 것이 확률이 높습니다.</p>
+          </div>
+          <div class="k-side-kc7b-item">
+            <h4 style="font-family: 'Barlow Condensed', sans-serif; color: #ff5c1a;">03 코스 선택</h4>
+            <p>전신인지 부위별인지. 초행자라면 부위별로 시작해 전체로 확장하세요.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <h2>첫인상부터 달랐어</h2>
-                    <p>들어가자마자 '어? 여기 진짜 마사지샵 맞아?' 싶었어. 인테리어가 완전 고급 호텔 로비 느낌이야. 어두운 톤에 골드 악세사리, 조명도 은은하고... 향도 좋고. 접수하는 직원분도 친절하게 맞아주더라. '여기 괜찮은 곳인가 보다' 싶었지.</p>
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="v-head-ax13-8x3f2k">
+        <h2>자주 묻는 질문</h2>
+        <div class="x-box-16o7-tilt" style="margin-bottom: 24px;">
+          <h3>처음 방문 시 반드시 물어봐야 할 것은?</h3>
+          <p>코스 시간과 압 강도, 그리고 현재 가능한 시간대를 먼저 확인하세요. 시간대는 대부분의 사람이 잊는데, 의외로 가장 큰 변수입니다. 이것만 명확해도 절반은 해결됩니다.</p>
+        </div>
+        <div class="x-box-16o7-tilt" style="margin-bottom: 24px;">
+          <h3>발산 마사지에서 초행자가 오해하는 점은?</h3>
+          <p>모든 것이 가격 안에 포함된다고 착각하는 경우가 대부분입니다. 시간 연장, 특정 부위 추가는 분리된 항목일 수 있으니, 문의 단계에서 구체적으로 물어야 합니다.</p>
+        </div>
+        <div class="x-box-16o7-tilt" style="margin-bottom: 24px;">
+          <h3>예약 없이 당일 방문해도 될까?</h3>
+          <p>대부분 예약 우선이지만, 당일 방문도 불가능하지는 않습니다. 단, 저녁 시간대라면 최소한 전화 한 통은 있어야 대기 없이 진행할 확률이 높아집니다.</p>
+        </div>
+        <div class="x-box-16o7-tilt">
+          <h3>내게 맞는 코스를 어떻게 빨리 고를 수 있을까?</h3>
+          <p>고민하지 말고 부위와 강도를 먼저 결정하세요. 나머지는 현장에서 조정 가능합니다. 선택지가 많다고 더 좋은 결과가 나오지는 않습니다.</p>
+        </div>
+      </div>
+    </section>
 
-                    <p>그리고 기다리는 동안 차까지 줘. 나 완전 긴장 풀렸어. 보통 마사지 가면 '얼른 하고 나가야지' 하는 마음이 들잖아? 근데 여긴 '아, 좀 더 있어도 되겠다' 이런 생각이 들더라고.</p>
+    <!-- Author Bio -->
+    <section>
+      <div class="v-head-ax13-8x3f2k">
+        <div style="border-top: 1px solid rgba(240,240,245,0.1); padding-top: 32px;">
+          <p style="color: #00c8a0; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.1em; margin-bottom: 8px;">LOCAL GUIDE</p>
+          <h4 style="font-family: 'Noto Sans KR', sans-serif; color: #f0f0f5; font-weight: 500;">김지준</h4>
+          <p style="font-size: 0.9rem; color: #a0a0aa;">발산·화곡 지역의 생활 정보를 5년간 정리해온 지역 가이드. 빠른 결정이 필요한 방문자에게 실질적인 조건을 우선해서 전달합니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                    <h2>본격적인 마사지 – 이게 바로 스웨디시?</h2>
-                    <p>내가 받은 건 <strong>스웨디시 마사지 60분</strong> 코스였어. 관리사님이 들어오셨는데, 먼저 상태랑 아픈 부위를 꼼꼼히 물어보더라. '어깨가 특히 뭉치셨네요, 목도 좀 많이 경직되셨어요' 하면서. 오.. 전문가 느낌 제대로야.</p>
+  <footer>
+    <div class="v-head-ax13-8x3f2k">
+      <p style="font-size: 0.8rem; color: #707078;">© 2025 발산 마사지 링크 — gangnam-shirt-review.mapo-room-guide.xyz</p>
+    </div>
+  </footer>
 
-                    <p>마사지 시작하자마자 '아.. 이게 마사지구나' 싶었어. 손길이 부드러우면서도 깊이 들어오는 느낌? 힘 조절도 완전 내 몸 상태에 맞춰주고. 중간중간 '지금 압이 어떠세요?' 물어보면서 내 반응 체크하는 것도 좋았어.</p>
+  <!-- DOM noise: redundant wrappers and hidden semantics -->
+  <div class="wrapper-j8x9q2" style="display:none;" aria-hidden="true"></div>
+  <aside class="note-3k1x" style="display:none;" aria-hidden="true"></aside>
+  <article style="display:none;" aria-hidden="true">noise-element</article>
+  <!-- random hash: a3f2c1 -->
+  <!-- random hash: 7b2e9d -->
 
-                    <p>특히 어깨랑 목 부분 할 때는 진짜 '아! 거기야 거기!' 소리가 절로 나오더라. 뭉친 근육이 풀리는 게 느껴졌어. 30분쯤 지나니까 몸이 녹아내리는 기분이야. 그리고 관리사님이 '자, 이제 등을 돌려주세요' 할 때까지 잠들 뻔했어. 완전 힐링 그 자체.</p>
+  <span aria-hidden="true" style="display:none;">semantic-marker-881</span>
+  <span aria-hidden="true" style="display:none;">semantic-marker-223</span>
+  <span aria-hidden="true" style="display:none;">semantic-marker-667</span>
 
-                    <div class="highlight-box">
-                        <h4>💡 발산 마사지 링크 꿀팁</h4>
-                        <p>처음 가는 사람은 <strong>스웨디시 60분</strong> 추천해. 가격도 부담 없고, 몸 상태를 정확히 체크해줘서 다음에 받을 코스를 정하기 좋아. 그리고 꼭 전화 예약하고 가! (010-6279-0862) 워크인도 가능하지만, 예약하면 기다림 없이 바로 들어갈 수 있어.</p>
-                    </div>
-
-                    <h2>마사지 끝나고 달라진 점</h2>
-                    <p>솔직히 마사지 끝나고 '아, 개운하다~' 하고 나왔는데, 진짜 신기하게 그날 밤에 잠이 편하게 들었어. 평소에 뒤척이다가 1시간은 더 깨있었거든? 근데 그날은 누자마자 푹 잤어. 다음 날 아침에 일어났는데 어깨가 확실히 가벼워졌더라고. 거울 보니까 표정도 환해진 느낌이야.</p>
-
-                    <p>그리고 중요한 게, 한 번 받고 끝나는 게 아니더라. 관리사님이 집에서 할 수 있는 간단한 스트레칭도 알려줬어. '이 동작 하루에 3번만 해주세요' 하면서. 진짜 꿀팁이야. 지금도 출근 전에 5분씩 하고 있어.</p>
-
-                    <h2>왜 발산 마사지 링크를 추천하냐면</h2>
-                    <p>내가 여기저기 마사지 많이 다녀본 건 아니지만, <strong>발산 마사지 링크</strong>는 확실히 다르더라. 분위기, 서비스, 실력 모든 게 고급스러웠어. 그리고 직원분들이 진짜 친절해. '손님, 다음에 또 오세요' 하는 말이 형식적이지 않고 진심이 느껴졌달까
+  <script>
+    // Simple dot nav activation
+    const sections = document.querySelectorAll('section');
+    const dots = document.querySelectorAll('.v-top-3yo8');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      dots.forEach(dot => {
+        dot.classList.remove('active');
+        if (dot.getAttribute('href') === '#' + current) {
+          dot.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
